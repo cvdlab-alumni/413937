@@ -80,7 +80,7 @@ floor03 = DOMAIN([[2.7,3.8],[2.6,3.7]])([1,1])
 floor04 = T([1,2])([3.25,2.6])(R([1,2])(PI)(circular_sector(PI, .55)))
 floor0 = EXTRUDE([3,STRUCT([floor00, floor01, floor02, floor03, floor04]),.3])
 
-floor10 = T([1,2,3])([-1.6,8.2,4])(GRID([[9.1,-2.2,8.2],[1.7],[.5]]))
+floor10 = T([1,2,3])([-1.6,8.2,4])(GRID([[4,-7.3,8.2],[1.7],[.5]]))
 floor11 = T([3])([4])(CUBOID([17.9,8.2,.5]))
 floor1 = STRUCT([floor10,floor11])
 
