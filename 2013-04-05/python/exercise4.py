@@ -35,7 +35,7 @@ big_window_horiz_bar = COLOR([0,0,0])(R([2,3])(-PI/2)(STRUCT(NN(3)([CYLINDER([.1
 big_window_vert_bar = COLOR([0,0,0])(STRUCT(NN(5)([CYLINDER([.1,3.2])(12), T([2])([2])])))
 
 big_window_bars = STRUCT([big_window_horiz_bar, big_window_vert_bar])
-big_window_glass = COLOR([.1,1,1,.9])(T([1])([.05])(CUBOID([.01,8,3.2])))
+big_window_glass = COLOR([.1,1,1,.3])(T([1])([.05])(CUBOID([.01,8,3.2])))
 
 big_window = STRUCT([big_window_bars, big_window_glass])
 
