@@ -159,8 +159,8 @@ var floor30 = T([2,3])([8.75,12])(GRID([[9.15,-4.85,3.5],[1.5],[.5]]));
 var floor31 = T([3])([12])(CUBOID([17.5, 8.75,.5]));
 var floor3 = STRUCT([floor30, floor31]);
 
-var floor4 = T([3])([16])(CUBOID([17.9,10,.75]));
-var floors = STRUCT([floor0, floor1, floor2, floor3, floor4]);
+ground = T([1,2])([-6,-4])(COLOR([0,1,0])(CUBOID([30,18,-.1])))
+floors = T([2])([.4])(STRUCT([floor0, floor1, floor2, floor3, floor4, ground]))
 
 var north0 = GRID([[-17.5,.4], [.4,-8,1.4,-.45,.4], [-4,12.7]]);
 var north1 = GRID([[-17.5,.4], [-.4,8], [-4,2.15,-1.6,2.15,-1.6,2.15,-1.55,1.5]]);

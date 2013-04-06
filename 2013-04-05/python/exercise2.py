@@ -5,7 +5,7 @@ building model.
 '''
 # utils functions:
 
-execfile("exercise1.py")
+#execfile("exercise1.py")
 
 GRID = COMP([INSR(PROD),AA(QUOTE)])
 
@@ -82,7 +82,8 @@ floor3 = STRUCT([floor30, floor31])
 # floor4:
 floor4 = T([3])([15.95])(CUBOID([17.9,10,.75]))
 
-floors = STRUCT([floor0, floor1, floor2, floor3, floor4])
+ground = T([1,2])([-6,-4])(COLOR([0,1,0])(CUBOID([30,18,-.1])))
+floors = T([2])([.4])(STRUCT([floor0, floor1, floor2, floor3, floor4, ground]))
 
 
 ################################################################################
