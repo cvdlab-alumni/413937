@@ -324,56 +324,7 @@ mirrorSurface = STRUCT([mirrorSurface1, COLOR([.6,.6,1])(mirrorSurface2)])
 
 mirror = STRUCT([mirror1, mirror2, mirrorSurface])
 
-
-
-
-
-
-
-
 #exercise5 = STRUCT([COLOR(BLUE)(T([1,3])([-22.6,3.3])(hood))])
-exercise5 = STRUCT([T([1,3])([-22.6,3.3])(hood), T([1,3])([-1.8,10])(roof), T([1,2,3])([-3.8,-8.5,7])(R([1,2])(-PI/2)(mirror))])
+exercise5 = STRUCT([T([1,3])([-22.6,3.3])(hood), T([1,3])([-1.8,10])(roof), T([1,2,3])([-3.8,-8.5,7])(R([1,2])(-PI/2)(mirror)), S([2])([-1])(T([1,2,3])([-3.8,-8.5,7])(R([1,2])(-PI/2)(mirror)))])
 
-
-
-
-
-
-
-
-
-
-
-hood = STRUCT([hood1, hood2, hood3, hood4, hood5, hood6, hood7])
-
-
-
-T([1,3])([-22.6,2])(hood)
-
-VIEW(hood1)
-
-
-
-
-
-VIEW(STRUCT([
-	POLYLINE(),
-	POLYLINE()
-	]))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+total = STRUCT([exercise2,exercise3,exercise4,exercise5])

@@ -87,7 +87,6 @@ bumperSide = T([1,2])([-9-5.5+.1,-1.5])(STRUCT([
 #Fender:
 fenderSideLinePoints = [[-14.7, 0.9], [-15.0, 1.0], [-15.1,1.4]]
 
-#fenderSideControlPoints = [[-15.1,1.4],[-12,3.5],[-4,6],[1.7,5.1]]
 fenderSideControlPoints = [[-15.1,1.4],[-12,3.5],[-4,5.5],[-1,5.1]]
 fenderSide = STRUCT([
 	MAP(BEZIER(S1)(fenderSideControlPoints))(domain1D),

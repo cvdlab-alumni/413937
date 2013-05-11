@@ -157,7 +157,6 @@ steeringWheel1 = R([1,2])(PI/4)(MAP(ROTATIONALSURFACE(BEZIER(S1)(AAPOINTS(SUM)([
 # Bottom part of the steering wheel:
 steeringWheelCP1 = ROT([1,2])(PI/4)(AAPOINTS(SUM)([7,0,0])(circleControlPoints))
 steeringWheelCP2 = AAPOINTS(SUM)([1,-.5,0])(steeringWheelCP1)
-#steeringWheelCP2 = ROT([2,3])(PI/6)(AAPOINTS(SUM)([0,7,0])(circleControlPoints))
 steeringWheelCP3 = AAPOINTS(PROD)([1,-1,1])(steeringWheelCP2)
 steeringWheelCP4 = AAPOINTS(PROD)([1,-1,1])(steeringWheelCP1)
 
