@@ -328,3 +328,5 @@ mirror = STRUCT([mirror1, mirror2, mirrorSurface])
 exercise5 = STRUCT([T([1,3])([-22.6,3.3])(hood), T([1,3])([-1.8,10])(roof), T([1,2,3])([-3.8,-8.5,7])(R([1,2])(-PI/2)(mirror)), S([2])([-1])(T([1,2,3])([-3.8,-8.5,7])(R([1,2])(-PI/2)(mirror)))])
 
 total = STRUCT([exercise2,exercise3,exercise4,exercise5])
+
+VIEW(total)
